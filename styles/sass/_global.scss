@@ -1,0 +1,48 @@
+/* Stripping styles */
+
+html {
+    font-size: 62.5%;
+}
+
+body,
+h1,
+p,
+input {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+.wrapper {
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+input {
+    background: none;
+    border: none;
+}
+
+input:focus {
+    background: white;
+    border: 1px solid $robin;
+}
+
+/* General Styles */

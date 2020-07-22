@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 2: Vanity Fur</title>
+    <link rel="stylesheet" href="./styles/sass/styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="wrapper">
+            <h1>Vanity Fair</h1>
+            <p>Doll up your pet with your favourite accessories!</p>
+            <button><a href="#">Dress up!</a></button>
+
+            <div class="logo">
+                <img src="./assets/pawLogo.png" alt="A pink paw logo with sparkles.">
+            </div>
+        </div>
+    </header>
+
+    <!-- App -->
+    <main>
+        <div class="wrapper">
+
+            <div class="flexContainer">
+                <form>
+
+                    <!-- Pet Selection -->
+                    <fieldset class="pet">
+                        <legend class="petTitle">pick your pet:</legend>
+                    
+                        <label aria-label="Click to add dog" for="dog">pup</label>
+                        <input aria-hidden="true" type="radio" name="pickPet" value="dog" id="dog">
+                    
+                        <label aria-label="Click to add cat" for="cat">kit</label>
+                        <input aria-hidden="true" type="radio" name="pickPet" value="cat" id="cat">
+
+                    </fieldset>
+
+                    <!-- Accessories Selection -->
+                    <fieldset class="accessories">
+                        <legend class="accessoriesTitle">pick your accessories:</legend>
+                    
+                        <!-- Headdress Options -->
+                        <p class="itemTitle">headdress:</p>
+                        <label aria-label="Click to add flower" for="flower">flower</label>
+                        <input aria-hidden="true" type="radio" name="headdress" value="flower" id="flower">
+                    
+                        <label aria-label="Click to add top hat" for="topHat">top hat</label>
+                        <input aria-hidden="true" type="radio" name="headdress" value="topHat" id="topHat">
+
+                        <label aria-label="Click to add crown" for="crown">crown</label>
+                        <input aria-hidden="true" type="radio" name="headdress" value="crown" id="crown">
+
+                        <!-- Neckpiece Options -->
+                        <p class="itemTitle">neckpiece:</p>
+                        <label aria-label="Click to add scarf" for="scarf">scarf</label>
+                        <input aria-hidden="true" type="radio" name="neckpiece" value="scarf" id="scarf">
+                    
+                        <label aria-label="Click to add collar" for="collar">collar</label>
+                        <input aria-hidden="true" type="radio" name="neckpiece" value="collar" id="collar">
+
+                        <label aria-label="Click to add ribbon" for="ribbon">ribbon</label>
+                        <input aria-hidden="true" type="radio" name="neckpiece" value="ribbon" id="ribbon">
+
+
+                        <!-- Toy Options -->
+                        <p class="itemTitle">toy:</p>
+                        <label aria-label="Click to add bowl" for="bowl">bowl</label>
+                        <input aria-hidden="true" type="radio" name="toy" value="bowl" id="bowl">
+                    
+                        <label aria-label="Click to add bear" for="bear">bear</label>
+                        <input aria-hidden="true" type="radio" name="toy" value="bear" id="bear">
+
+                        <label aria-label="Click to add ball" for="ball">ball</label>
+                        <input aria-hidden="true" type="radio" name="toy" value="ball" id="ball">
+                    </fieldset>
+
+                </form>
+
+                <aside class="canvas">
+
+                    <!-- Pet Images -->
+                    <div class="imageContainer dog">
+                        <img src="./assets/petDog.png" alt="A white dog.">
+                    </div>
+                    <div class="imageContainer cat">
+                        <img src="./assets/petCat.png" alt="A pink cat.">
+                    </div>
+
+                    <!-- Headdress Images -->
+                    <div class="imageContainer flower">
+                        <img src="./assets/headFlower.png" alt="A pink flower with yellow pistil.">
+                    </div>
+                    <div class="imageContainer topHat">
+                        <img src="./assets/headHat.png" alt="A snazzy black top hat.">
+                    </div>
+                    <div class="imageContainer crown">
+                        <img src="./assets/headCrown.png" alt="A blue crown with yellow jewel.">
+                    </div>
+
+                    <!-- Neckpiece Images -->
+                    <div class="imageContainer scarf">
+                        <img src="./assets/neckScarf.png" alt="A checkered scarf.">
+                    </div>
+                    <div class="imageContainer collar">
+                        <img src="./assets/neckCollar.png" alt="A red collar with a yellow bell.">
+                    </div>
+                    <div class="imageContainer ribbon">
+                        <img src="./assets/neckRibbon.png" alt="A purple bow ribbon.">
+                    </div>
+
+                    <!-- Toy Images -->
+                    <div class="imageContainer bowl">
+                        <img src="./assets/toyBowl.png" alt="A blue food bowl with treats.">
+                    </div>
+                    <div class="imageContainer bear">
+                        <img src="./assets/toyBear.png" alt="A brown teddy bear.">
+                    </div>
+                    <div class="imageContainer ball">
+                        <img src="./assets/toyBall.png" alt="A pink and white ball.">
+                    </div>
+                    
+                </aside>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer / Credit -->
+    <footer>
+        <p>Designed by Pik Lin</p>
+        <p>Vectorized by Howe Foo</p>
+    </footer>
+
+    <!-- Javascript -->
+    <script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
+
+	<script src="./script.js"></script>
+</body>
+</html>
