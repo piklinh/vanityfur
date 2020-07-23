@@ -237,6 +237,10 @@ html {
 }
 
 /* Standard Styles */
+.imageHidden {
+  display: none;
+}
+
 .pet,
 .accessories {
   border: none;
