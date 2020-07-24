@@ -1,3 +1,12 @@
 .imageHidden {
     display: none;
 }
+
+// Display block is the default state for display
+// Meaning that the image will be displayed as it is (visible in this case)
+// .imageHidden.imageVisible in this means that any item with BOTH classes
+// Will be in the display: block state
+
+.imageHidden.imageVisible {
+    display: block;
+}

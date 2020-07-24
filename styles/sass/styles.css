@@ -241,6 +241,10 @@ html {
   display: none;
 }
 
+.imageHidden.imageVisible {
+  display: block;
+}
+
 .pet,
 .accessories {
   border: none;
