@@ -1,0 +1,138 @@
+// Media Queries
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+    
+    header {
+        height: 50vh;
+    }
+
+    .flexContainer {
+
+        .flexForm {
+            width: 50%;
+        }
+    
+        .flexCanvas {
+            width: 50%;
+        }
+    }
+
+    fieldset {
+        margin-bottom: 0;
+    }
+
+    .pet label,
+    .accessories label {
+        font-size: 1.5rem;
+    }
+
+    .canvas {
+        .petOptions {
+            bottom: 20%; 
+    }
+}
+    
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+
+    .headerTextFlex {
+        width: 100%;
+    }
+
+    .headerImageFlex {
+        width: 0;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .flexContainer {
+        flex-wrap: wrap;
+
+        .flexForm {
+            width: 100%;
+        }
+        
+        .flexCanvas {
+            width: 100%;
+        }
+    }
+
+    .canvas {
+        .petOptions {
+            width: 70%; 
+            bottom: 10%;
+        }
+    }
+
+    footer {
+        
+        .footerContainer {
+            p {
+                font-size: 1.5rem;
+                padding: 20px 50px 20px 50px;
+            }
+        }
+    }
+
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+
+    h1 {
+        line-height: 1;
+    }
+
+    .canvas {
+        height: 400px;
+
+        .petOptions {
+            bottom: 20%;
+        }
+    }
+    
+    
+    footer {
+
+        .footerContainer {
+            flex-direction: column;
+            padding: 20px;
+
+            p {
+                font-size: 1.5rem;
+                padding: 0px;
+            }
+        }
+    }
+}
+
+/* Itsy bitsy phone size */
+@media (max-width: 320px) {
+
+    header {
+        .headerFlex {
+            width: 100%;
+        }
+    }
+
+    h1 {
+        font-size: 6rem;
+    }
+
+    .canvas {
+        height: 300px;
+
+        .petOptions {
+            bottom: 20%;
+        }
+    }
+
+    legend {
+        line-height: 1.2;
+    }
+}

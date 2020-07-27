@@ -1,13 +1,11 @@
-/* Stripping styles */
+// Stripping Styles
 
 html {
     font-size: 62.5%;
 }
 
-body,
 h1,
-p,
-input {
+p {
     margin: 0;
     padding: 0;
 }
@@ -40,9 +38,43 @@ input {
     border: none;
 }
 
-input:focus {
-    background: white;
-    border: 1px solid $robin;
+// General Styles 
+
+h1 {
+    font-family: $primaryFont;
+    font-size: 8rem;
+    color: $secondaryColor;
+    line-height: 1.6;
 }
 
-/* General Styles */
+p {
+    font-family: $secondaryFont;
+    font-size: 2rem;
+    color: $secondaryColor;
+    line-height: 1.6;
+}
+
+legend {
+    font-family: $primaryFont;
+    font-size: 3rem;
+    color: $secondaryColor;
+    line-height: 1.6;
+}
+
+button {
+    background-color: $secondaryColor;
+    font-family: $secondaryFont;
+    font-size: 2rem;
+    color: $tertiaryColor;
+    padding: 10px;
+    border-radius: 2px;
+    cursor: default;
+}
+
+button:hover {
+    background-color: lighten($secondaryColor, 20);
+}
+
+button:focus {
+    border: 2px solid $secondaryColor;
+}

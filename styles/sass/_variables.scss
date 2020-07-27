@@ -1,0 +1,11 @@
+$primaryColor: #fae6d3;
+$secondaryColor: #72768f;
+$tertiaryColor: white;
+
+$primaryFont: 'Limelight', cursive;
+$secondaryFont: 'Courier Prime', monospace;
+
+@mixin images($zIndex) {
+    position: absolute;
+    z-index: $zIndex;
+}

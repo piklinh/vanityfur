@@ -1,12 +1,160 @@
+// Header
+
+header {
+    height: 80vh;
+    background-color: $primaryColor;
+    background-size: cover;
+    
+
+    .headerFlex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 100px;
+        width: calc(100% - 50px);
+    }
+}
+
+.headerTextFlex {
+    width: 70%;
+
+    h1,
+    p {
+        padding-bottom: 20px;
+    }
+}
+
+.headerImageFlex {
+    width: 30%;
+    padding-left: 50px;
+}
+
+// Main
+
+main {
+    background-color: $primaryColor;
+    height: 100%;
+}
+
+// Form
+
+.flexContainer {
+    display: flex;
+    padding-bottom: 50px;
+
+    .flexForm {
+        width: 60%;
+    }
+
+    .flexCanvas {
+        width: 40%;
+        display: flex;
+        
+    }
+}   
+
+fieldset {
+    border: none;
+    margin-bottom: 50px;
+}
+
+.pet input[type="radio"],
+.accessories input[type="radio"] {
+    opacity: 0;
+    position: fixed;
+    width: 0;
+}
+
+.pet label,
+.accessories label {
+    display: inline-block;
+    font-family: $secondaryFont;
+    font-size: 2rem;
+    background-color: $tertiaryColor;
+    color: $secondaryColor;
+    padding: 10px 20px;
+    margin: 0 20px 20px 0;
+    border: 2px solid $secondaryColor;
+    border-radius: 5px;
+}
+
+// Images
+
 .imageHidden {
     display: none;
 }
 
-// Display block is the default state for display
-// Meaning that the image will be displayed as it is (visible in this case)
-// .imageHidden.imageVisible in this means that any item with BOTH classes
-// Will be in the display: block state
-
 .imageHidden.imageVisible {
     display: block;
 }
+
+.canvas {
+    background-color: $tertiaryColor;
+    border: 8px solid $secondaryColor;
+    border-radius: 10px;
+    height: 500px;
+    width: 100%;          
+    position: relative;
+
+
+    .petOptions {
+        position: absolute;
+        width: 80%;
+        left: 10%;
+        bottom: 15%; 
+    
+        .dog,
+        .cat {
+            position: relative;
+        }
+    
+        .crown {
+            @include images(10);
+        }
+
+        .flower {
+            @include images(10);
+        }
+        
+        .topHat {
+            @include images(10);
+        }
+        
+        .scarf {
+            @include images(10);
+        }
+        
+        .collar {
+            @include images(10);
+        }
+        
+        .ribbon {
+            @include images(10);
+        }
+        
+        .ball,
+        .bear,
+        .bowl {
+            @include images(20);
+        }
+    
+    }
+}
+
+// Footer 
+
+footer {
+    
+    .footerContainer {
+        background-color: $primaryColor;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        p {
+            text-align: center;
+            padding: 20px 100px 20px 0;
+        }
+    }
+}
+
