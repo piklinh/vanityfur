@@ -460,8 +460,11 @@ fieldset {
   z-index: 20;
 }
 
-footer .footerContainer {
+footer {
   background-color: #fae6d3;
+}
+
+footer .footerContainer {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -478,8 +481,8 @@ footer .footerContainer p {
 
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
-  header {
-    height: 50vh;
+  h1 {
+    line-height: 1;
   }
   .flexContainer .flexForm {
     width: 50%;
@@ -496,6 +499,10 @@ footer .footerContainer p {
   }
   .canvas .petOptions {
     bottom: 20%;
+  }
+  footer .footerContainer p {
+    font-size: 1.5rem;
+    padding: 20px 50px 20px 50px;
   }
 }
 
@@ -524,16 +531,12 @@ footer .footerContainer p {
     width: 70%;
     bottom: 10%;
   }
-  footer .footerContainer p {
-    font-size: 1.5rem;
-    padding: 20px 50px 20px 50px;
-  }
 }
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
-  h1 {
-    line-height: 1;
+  header .headerFlex {
+    width: 100%;
   }
   .canvas {
     height: 400px;
@@ -556,9 +559,6 @@ footer .footerContainer p {
 
 /* Itsy bitsy phone size */
 @media (max-width: 320px) {
-  header .headerFlex {
-    width: 100%;
-  }
   h1 {
     font-size: 6rem;
   }
@@ -566,6 +566,13 @@ footer .footerContainer p {
     height: 300px;
   }
   .canvas .petOptions {
+    bottom: 20%;
+  }
+  legend {
+    line-height: 1.2;
+  }
+}
+ns {
     bottom: 20%;
   }
   legend {

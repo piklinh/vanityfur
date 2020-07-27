@@ -144,9 +144,9 @@ fieldset {
 // Footer 
 
 footer {
-    
+    background-color: $primaryColor;
+
     .footerContainer {
-        background-color: $primaryColor;
         width: 100%;
         display: flex;
         justify-content: center;

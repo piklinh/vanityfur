@@ -1,12 +1,13 @@
 // Media Queries
 
 /* Portrait tablet and small desktops */
-@media (max-width: 940px) {
-    
-    header {
-        height: 50vh;
-    }
 
+@media (max-width: 940px) {
+
+    h1 {
+        line-height: 1;
+    }
+    
     .flexContainer {
 
         .flexForm {
@@ -30,14 +31,30 @@
     .canvas {
         .petOptions {
             bottom: 20%; 
+        }
     }
-}
+
+    footer {
+        
+        .footerContainer {
+            p {
+                font-size: 1.5rem;
+                padding: 20px 50px 20px 50px;
+            }
+        }
+    }
     
 }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
 
+    header {
+        .headerFlex {
+            width: 100%;
+        }
+    }
+    
     .headerTextFlex {
         width: 100%;
     }
@@ -69,24 +86,10 @@
         }
     }
 
-    footer {
-        
-        .footerContainer {
-            p {
-                font-size: 1.5rem;
-                padding: 20px 50px 20px 50px;
-            }
-        }
-    }
-
 }
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
-
-    h1 {
-        line-height: 1;
-    }
 
     .canvas {
         height: 400px;
@@ -95,7 +98,6 @@
             bottom: 20%;
         }
     }
-    
     
     footer {
 
@@ -113,12 +115,6 @@
 
 /* Itsy bitsy phone size */
 @media (max-width: 320px) {
-
-    header {
-        .headerFlex {
-            width: 100%;
-        }
-    }
 
     h1 {
         font-size: 6rem;
