@@ -143,18 +143,9 @@ fieldset {
 
 // Footer 
 
-footer {
+footer p {
     background-color: $primaryColor;
-
-    .footerContainer {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-
-        p {
-            text-align: center;
-            padding: 20px 100px 20px 0;
-        }
-    }
+    text-align: center;
+    padding: 20px 0;
 }
 

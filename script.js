@@ -1,6 +1,7 @@
 const petApp = {};
 
 // On click, button to smooth scroll to the main part of the page
+
 petApp.scroll = function(event) {
     $('button').on('click', function(event) {
     
@@ -37,6 +38,7 @@ petApp.displayImage = function() {
         // Else if the radioValue is equal to 'dog', it will display the following css items (dog's accessories) 
         
         if(radioValue === 'cat') {
+            //// TO DO: PUT INFO INTO CSS AND THEN WRITE AN ADD OR TOGGLE CLASS TO CALL FOR THE CSS
             $('.topHat').css({"width": "40%", "left":"15%", "bottom":"70%"});
             $('.crown').css({"width": "30%", "left":"20%", "bottom":"75%"});
             $('.flower').css({"width": "30%", "left":"35%", "bottom":"67%"});
