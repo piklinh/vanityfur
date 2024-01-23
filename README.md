@@ -1,5 +1,5 @@
 <h1><strong>Vanity Fur</strong> 😻</h1>
-  <p>View the project <a href="https://www.piklinhoe.com/](https://piklinh.github.io/vanityfur/" aria-hidden="true">here</a></p>.
+  <p>View the project <a href="https://www.piklinhoe.com/](https://piklinh.github.io/vanityfur/" aria-hidden="true">here</a>.</p>
     <p>Ever wondered how cute your dog would look with a crown? Or your cat with a scarf? Accessorize without the hassles of bites and scratches; Vanity Fur is a dress-your-pet app built with Javascript and JQuery that allows the user to dress up their pet of choice with selected accessories. I created and designed the images for the pets and accessories.</p>
     <img src="https://www.piklinhoe.com/assets/personal/main_vanityfur.png" alt="Screenshot of Vanity Fur App" style="width: 350px;">
 
